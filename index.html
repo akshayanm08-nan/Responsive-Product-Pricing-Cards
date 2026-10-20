@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compare flexible monthly and yearly plans with responsive pricing cards.">
+    <title>Pricing Plans | Nova</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body><main class="pricing-container">
+    <header class="page-header">
+        <span class="eyebrow">SIMPLE & TRANSPARENT</span>
+        <h1>Plans that grow <span>with you.</span></h1>
+        <p class="description">
+            Choose the perfect plan for your goals. Upgrade whenever you're ready.
+        </p>
+
+        <div class="billing-toggle">
+            <span id="monthly-label" class="billing-label active">Monthly</span>
+
+            <button
+                type="button"
+                id="billing-switch"
+                class="toggle-switch"
+                role="switch"
+                aria-checked="false"
+                aria-label="Switch to yearly billing"
+            >
+                <span class="toggle-knob"></span>
+            </button>
+
+            <span id="yearly-label" class="billing-label">Yearly</span>
+            <span class="save-badge">Save 20%</span>
+        </div>
+    </header>
+
+    <section class="pricing-grid" aria-label="Available pricing plans">
+
+        <article
+            class="pricing-card"
+            data-monthly="499"
+            data-yearly="399"
+        >
+            <div class="plan-icon starter-icon">✦</div>
+            <h2>Starter</h2>
+            <p class="plan-description">For your personal projects.</p>
+
+            <div class="price">
+                <span class="currency">₹</span>
+                <span class="price-amount">499</span>
+                <span class="price-period">/month</span>
+            </div>
+
+            <p class="billing-note">Billed monthly</p>
+
+            <a href="#contact" class="plan-button secondary-button">
+                Get Started
+            </a>
+
+            <div class="feature-divider"></div>
+
+            <p class="features-title">WHAT'S INCLUDED</p>
+            <ul class="features">
+                <li>✓ 3 active projects</li>
+                <li>✓ Basic analytics</li>
+                <li>✓ 5 GB cloud storage</li>
+                <li>✓ Email support</li>
+            </ul>
+        </article>
+
+        <article
+            class="pricing-card popular-card"
+            data-monthly="999"
+            data-yearly="799"
+        >
+            <span class="ribbon popular-ribbon">POPULAR</span>
+
+            <div class="plan-icon pro-icon">✧</div>
+            <h2>Professional</h2>
+            <p class="plan-description">For growing teams and creators.</p>
+
+            <div class="price">
+                <span class="currency">₹</span>
+                <span class="price-amount">999</span>
+                <span class="price-period">/month</span>
+            </div>
+
+            <p class="billing-note">Billed monthly</p>
+
+            <a href="#contact" class="plan-button primary-button">
+                Choose Professional
+            </a>
+
+            <div class="feature-divider"></div>
+
+            <p class="features-title">EVERYTHING IN STARTER, PLUS</p>
+            <ul class="features">
+                <li>✓ Unlimited projects</li>
+                <li>✓ Advanced analytics</li>
+                <li>✓ 50 GB cloud storage</li>
+                <li>✓ Priority support</li>
+                <li>✓ Team collaboration</li>
+            </ul>
+        </article>
+
+        <article
+            class="pricing-card"
+            data-monthly="1999"
+            data-yearly="1599"
+        >
+            <span class="ribbon value-ribbon">BEST VALUE</span>
+
+            <div class="plan-icon premium-icon">✺</div>
+            <h2>Business</h2>
+            <p class="plan-description">For ambitious businesses.</p>
+
+            <div class="price">
+                <span class="currency">₹</span>
+                <span class="price-amount">1999</span>
+                <span class="price-period">/month</span>
+            </div>
+
+            <p class="billing-note">Billed monthly</p>
+
+            <a href="#contact" class="plan-button secondary-button">
+                Choose Business
+            </a>
+
+            <div class="feature-divider"></div>
+
+            <p class="features-title">EVERYTHING IN PROFESSIONAL, PLUS</p>
+            <ul class="features">
+                <li>✓ Unlimited cloud storage</li>
+                <li>✓ Custom integrations</li>
+                <li>✓ Dedicated support</li>
+                <li>✓ Advanced security</li>
+                <li>✓ Custom workflows</li>
+            </ul>
+        </article>
+
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2>Have questions?</h2>
+        <p>Choose a plan that fits your needs and start exploring.</p>
+        <a href="mailto:hello@example.com">Contact our team ↗</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Nova Pricing. Designed with care.</p>
+        <p>Illustrative pricing for a sample project.</p>
+    </footer>
+
+</main>
+
+</body>
+</html>
